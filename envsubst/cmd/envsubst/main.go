@@ -6,7 +6,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/open-beagle/bdpulse-commons/envsubst/v2"
+	"github.com/open-beagle/bdpulse-commons/envsubst"
 )
 
 func main() {

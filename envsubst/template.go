@@ -5,7 +5,7 @@ import (
 	"io"
 	"io/ioutil"
 
-	"github.com/open-beagle/bdpulse-commons/envsubst/v2/parse"
+	"github.com/open-beagle/bdpulse-commons/envsubst/parse"
 )
 
 // state represents the state of template execution. It is not part of the

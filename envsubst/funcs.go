@@ -6,7 +6,7 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/open-beagle/bdpulse-commons/envsubst/v2/path"
+	"github.com/open-beagle/bdpulse-commons/envsubst/path"
 )
 
 // defines a parameter substitution function.
