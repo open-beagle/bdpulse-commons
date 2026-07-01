@@ -1,1 +1,1 @@
-module github.com/drone/signal
+module github.com/open-beagle/bdpulse-commons/signal

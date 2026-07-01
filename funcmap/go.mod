@@ -1,4 +1,4 @@
-module github.com/drone/funcmap
+module github.com/open-beagle/bdpulse-commons/funcmap
 
 go 1.12
 

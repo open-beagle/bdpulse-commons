@@ -6,7 +6,7 @@ https://gohugo.io/functions/ ([view source](https://github.com/gohugoio/hugo/tre
 Import the package:
 
 ```
-import "github.com/drone/funcmap"
+import "github.com/open-beagle/bdpulse-commons/funcmap"
 ```
 
 Provide the Funcmap when compiling your templates:

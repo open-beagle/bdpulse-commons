@@ -1,4 +1,4 @@
-module github.com/drone/envsubst/v2
+module github.com/open-beagle/bdpulse-commons/envsubst/v2
 
 require github.com/google/go-cmp v0.2.0
 
