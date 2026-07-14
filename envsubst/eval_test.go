@@ -2,6 +2,22 @@ package envsubst
 
 import "testing"
 
+func TestEvalPreservesPipelineExpressions(t *testing.T) {
+	got, err := Eval("image: golang:${{ env.GO_VERSION }}\ntoken: ${{ secrets.REGISTRY_TOKEN }}\ncommit: ${DRONE_COMMIT}", func(name string) string {
+		if name == "DRONE_COMMIT" {
+			return "abc123"
+		}
+		return ""
+	})
+	if err != nil {
+		t.Fatal(err)
+	}
+	want := "image: golang:${{ env.GO_VERSION }}\ntoken: ${{ secrets.REGISTRY_TOKEN }}\ncommit: abc123"
+	if got != want {
+		t.Fatalf("Eval() = %q, want %q", got, want)
+	}
+}
+
 // test cases sourced from tldp.org
 // http://www.tldp.org/LDP/abs/html/parameter-substitution.html
 
